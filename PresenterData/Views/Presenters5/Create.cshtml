@@ -1,0 +1,247 @@
+﻿@model PresenterData.Models.Presenter
+
+@{
+    /**/
+
+    ViewBag.Title = "Create";
+}
+
+<h2>Oral presentation evaluation</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.StudentName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.StudentName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StudentName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PaperTitle, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PaperTitle, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PaperTitle, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            @Html.HiddenFor(model => model.PaperId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.PaperId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PaperTitle, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <table class="table table-striped table-responsive">
+        <thead>
+            <tr>
+                <th scope="col">Presentation Skills</th>
+                <th scope="col">Poor</th>
+                <th scope="col">Fair</th>
+                <th scope="col">Adequate</th>
+                <th scope="col">Good</th>
+                <th scope="col">Excellent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Clear and audible</th>
+                @foreach (var item in Model.claritys)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedClarity, item.Id)</td>
+                }
+            </tr>
+
+            <tr>
+                <th scope="row">Eye contact</th>
+                @foreach (var item in Model.eyecons)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedEyecon, item.Id)</td>
+                }
+            </tr>
+
+            <tr>
+                <th scope="row">Interesting and engaging</th>
+                @foreach (var item in Model.intengs)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedInteng, item.Id)</td>
+                }
+            </tr>
+
+            <tr>
+                <th scope="row">Time keeping</th>
+                @foreach (var item in Model.timekees)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedTimekee, item.Id)</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped table-responsive">
+        <thead>
+            <tr>
+                <th scope="col">Presentation Content</th>
+                <th scope="col">Poor</th>
+                <th scope="col">Fair</th>
+                <th scope="col">Adequate</th>
+                <th scope="col">Good</th>
+                <th scope="col">Excellent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Clear and audible</th>
+                @foreach (var item in Model.origquas)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedOrigqua, item.Id)</td>
+                }
+            </tr>
+
+            <tr>
+                <th scope="row">Eye contact</th>
+                @foreach (var item in Model.corlevs)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedCorlev, item.Id)</td>
+                }
+            </tr>
+
+            <tr>
+                <th scope="row">Interesting and engaging</th>
+                @foreach (var item in Model.wellsturs)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedWellstru, item.Id)</td>
+                }
+            </tr>
+
+            <tr>
+                <th scope="row">Time keeping</th>
+                @foreach (var item in Model.gooduses)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedGooduse, item.Id)</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-striped table-responsive">
+        <thead>
+            <tr>
+                <th scope="col">Response to Questions</th>
+                <th scope="col">Poor</th>
+                <th scope="col">Fair</th>
+                <th scope="col">Adequate</th>
+                <th scope="col">Good</th>
+                <th scope="col">Excellent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Clear and audible</th>
+                @foreach (var item in Model.questwells)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedQuestwell, item.Id)</td>
+                }
+            </tr>
+
+            <tr>
+                <th scope="row">Eye contact</th>
+                @foreach (var item in Model.clearansws)
+                {
+                    <td> @Html.RadioButtonFor(model => model.SelectedClearansw, item.Id)</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedClarity, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedEyecon, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedInteng, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedTimekee, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedOrigqua, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedCorlev, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedWellstru, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedGooduse, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedQuestwell, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.SelectedClearansw, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <hr />
+    <table class="table table-striped table-responsive"></table>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Nominate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.Nominate)
+                @Html.ValidationMessageFor(model => model.Nominate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+
+
+    <div class="form-group">
+        <div class="left">
+            @Html.ActionLink("Back to List", "List") &nbsp;
+        </div>
+
+        <div class="right">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
