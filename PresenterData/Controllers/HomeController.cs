@@ -13,6 +13,11 @@ namespace PresenterData.Controllers
             return View();
         }
 
+        public ActionResult Subindex()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "UPEC 2018 Presentation and paper grading application.";

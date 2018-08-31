@@ -20,6 +20,7 @@ namespace PresenterData.Controllers
         {
             ViewBag.TotalSort = sortBy == "Totmar" ? "Totmar_desc" : "Totmar";
             ViewBag.SessionSort = sortBy == "SessionId" ? "SessionId_desc" : "SessionId";
+            ViewBag.PaperSort = sortBy == "Nominate" ? "Nominate_desc" : "Nominate";
             var presenters = db.Presenters.AsQueryable();
             switch (sortBy)
             {
@@ -34,6 +35,12 @@ namespace PresenterData.Controllers
                     break;
                 case "SessionId_desc":
                     presenters = presenters.OrderByDescending(s => s.SessionId);
+                    break;
+                case "Nominate":
+                    presenters = presenters.OrderBy(s => s.Nominate);
+                    break;
+                case "Nominate_desc":
+                    presenters = presenters.OrderByDescending(s => s.Nominate);
                     break;
                 default:
                     presenters = presenters.OrderBy(s => s.StudentName);

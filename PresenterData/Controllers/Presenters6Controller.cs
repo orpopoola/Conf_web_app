@@ -46,7 +46,7 @@ namespace PresenterData.Controllers
                     presenters = presenters.OrderByDescending(s => s.Totmar);
                     break;
                 default:
-                    presenters = presenters.OrderBy(s => s.StudentName);
+                    presenters = presenters.OrderBy(s => s.PaperId);
                     break;
             }
             return View(presenters.ToList());

@@ -1,0 +1,113 @@
+﻿@model IEnumerable<PresenterData.Models.Presenter>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Continue Marking", "List")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedClarity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedEyecon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedInteng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedTimekee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedOrigqua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedCorlev)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedWellstru)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedGooduse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedQuestwell)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectedClearansw)
+        </th>
+        <th>
+            @Html.ActionLink("Score", "Index", new { sortBy = ViewBag.TotalSort })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nominate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if (item.SessionId == 29.ToString())
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PaperId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedClarity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedEyecon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedInteng)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedTimekee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedOrigqua)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedCorlev)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedWellstru)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedGooduse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedQuestwell)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SelectedClearansw)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Totmar)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nominate)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    }
+
+</table>

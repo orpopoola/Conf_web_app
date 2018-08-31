@@ -19,9 +19,10 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44375</IISExpressSSLPort>
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -44,6 +45,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -193,11 +196,46 @@
     <Compile Include="Controllers\AdminuController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Presenters10Controller.cs" />
+    <Compile Include="Controllers\Presenters11Controller.cs" />
+    <Compile Include="Controllers\Presenters12Controller.cs" />
+    <Compile Include="Controllers\Presenters13Controller.cs" />
+    <Compile Include="Controllers\Presenters14Controller.cs" />
+    <Compile Include="Controllers\Presenters15Controller.cs" />
+    <Compile Include="Controllers\Presenters16Controller.cs" />
+    <Compile Include="Controllers\Presenters17Controller.cs" />
+    <Compile Include="Controllers\Presenters18Controller.cs" />
+    <Compile Include="Controllers\Presenters19Controller.cs" />
+    <Compile Include="Controllers\Presenters1Controller.cs" />
+    <Compile Include="Controllers\Presenters20Controller.cs" />
+    <Compile Include="Controllers\Presenters21Controller.cs" />
+    <Compile Include="Controllers\Presenters22Controller.cs" />
+    <Compile Include="Controllers\Presenters23Controller.cs" />
+    <Compile Include="Controllers\Presenters24Controller.cs" />
+    <Compile Include="Controllers\Presenters25Controller.cs" />
+    <Compile Include="Controllers\Presenters26Controller.cs" />
+    <Compile Include="Controllers\Presenters27Controller.cs" />
+    <Compile Include="Controllers\Presenters28Controller.cs" />
+    <Compile Include="Controllers\Presenters29Controller.cs" />
     <Compile Include="Controllers\Presenters2Controller.cs" />
+    <Compile Include="Controllers\Presenters30Controller.cs" />
+    <Compile Include="Controllers\Presenters31Controller.cs" />
+    <Compile Include="Controllers\Presenters32Controller.cs" />
+    <Compile Include="Controllers\Presenters33Controller.cs" />
+    <Compile Include="Controllers\Presenters34Controller.cs" />
+    <Compile Include="Controllers\Presenters35Controller.cs" />
+    <Compile Include="Controllers\Presenters36Controller.cs" />
+    <Compile Include="Controllers\Presenters37Controller.cs" />
+    <Compile Include="Controllers\Presenters38Controller.cs" />
+    <Compile Include="Controllers\Presenters39Controller.cs" />
     <Compile Include="Controllers\Presenters3Controller.cs" />
+    <Compile Include="Controllers\Presenters40Controller.cs" />
     <Compile Include="Controllers\Presenters4Controller.cs" />
     <Compile Include="Controllers\Presenters5Controller.cs" />
     <Compile Include="Controllers\Presenters6Controller.cs" />
+    <Compile Include="Controllers\Presenters7Controller.cs" />
+    <Compile Include="Controllers\Presenters8Controller.cs" />
+    <Compile Include="Controllers\Presenters9Controller.cs" />
     <Compile Include="Controllers\PresentersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -230,6 +268,38 @@
     <Compile Include="Migrations\201806241533080_CreatePresenterTableUser2.Designer.cs">
       <DependentUpon>201806241533080_CreatePresenterTableUser2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808232031523_sevenSessions.cs" />
+    <Compile Include="Migrations\201808232031523_sevenSessions.Designer.cs">
+      <DependentUpon>201808232031523_sevenSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808232032524_sevenSessions1.cs" />
+    <Compile Include="Migrations\201808232032524_sevenSessions1.Designer.cs">
+      <DependentUpon>201808232032524_sevenSessions1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808271827038_paperscore.cs" />
+    <Compile Include="Migrations\201808271827038_paperscore.Designer.cs">
+      <DependentUpon>201808271827038_paperscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808271917280_paperscore2.cs" />
+    <Compile Include="Migrations\201808271917280_paperscore2.Designer.cs">
+      <DependentUpon>201808271917280_paperscore2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808271936289_papscore.cs" />
+    <Compile Include="Migrations\201808271936289_papscore.Designer.cs">
+      <DependentUpon>201808271936289_papscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808271949595_papscore2.cs" />
+    <Compile Include="Migrations\201808271949595_papscore2.Designer.cs">
+      <DependentUpon>201808271949595_papscore2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808271951105_papscore21.cs" />
+    <Compile Include="Migrations\201808271951105_papscore21.Designer.cs">
+      <DependentUpon>201808271951105_papscore21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808271952027_papscore2a.cs" />
+    <Compile Include="Migrations\201808271952027_papscore2a.Designer.cs">
+      <DependentUpon>201808271952027_papscore2a.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Clarity.cs" />
@@ -253,8 +323,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\banner1.svg" />
     <Content Include="Content\Images\banner2.svg" />
-    <Content Include="Content\Images\banner3.svg" />
-    <Content Include="Content\Images\banner4.svg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -264,7 +332,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Properties\PublishProfiles\upec - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\upec - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -352,6 +419,217 @@
     <Content Include="Views\Presenters4\Index.cshtml" />
     <Content Include="Views\Presenters5\Index.cshtml" />
     <Content Include="Views\Presenters6\Index.cshtml" />
+    <Content Include="Views\Presenters7\Create.cshtml" />
+    <Content Include="Views\Presenters7\Delete.cshtml" />
+    <Content Include="Views\Presenters7\Details.cshtml" />
+    <Content Include="Views\Presenters7\Edit.cshtml" />
+    <Content Include="Views\Presenters7\Index.cshtml" />
+    <Content Include="Views\Presenters7\List.cshtml" />
+    <Content Include="Views\Presenters8\Create.cshtml" />
+    <Content Include="Views\Presenters8\Delete.cshtml" />
+    <Content Include="Views\Presenters8\Details.cshtml" />
+    <Content Include="Views\Presenters8\Edit.cshtml" />
+    <Content Include="Views\Presenters8\Index.cshtml" />
+    <Content Include="Views\Presenters9\Create.cshtml" />
+    <Content Include="Views\Presenters9\Delete.cshtml" />
+    <Content Include="Views\Presenters9\Details.cshtml" />
+    <Content Include="Views\Presenters9\Edit.cshtml" />
+    <Content Include="Views\Presenters9\Index.cshtml" />
+    <Content Include="Views\Presenters10\Create.cshtml" />
+    <Content Include="Views\Presenters10\Delete.cshtml" />
+    <Content Include="Views\Presenters10\Details.cshtml" />
+    <Content Include="Views\Presenters10\Edit.cshtml" />
+    <Content Include="Views\Presenters10\Index.cshtml" />
+    <Content Include="Views\Presenters11\Create.cshtml" />
+    <Content Include="Views\Presenters11\Delete.cshtml" />
+    <Content Include="Views\Presenters11\Details.cshtml" />
+    <Content Include="Views\Presenters11\Edit.cshtml" />
+    <Content Include="Views\Presenters11\Index.cshtml" />
+    <Content Include="Views\Presenters12\Create.cshtml" />
+    <Content Include="Views\Presenters12\Delete.cshtml" />
+    <Content Include="Views\Presenters12\Details.cshtml" />
+    <Content Include="Views\Presenters12\Edit.cshtml" />
+    <Content Include="Views\Presenters12\Index.cshtml" />
+    <Content Include="Views\Presenters13\Create.cshtml" />
+    <Content Include="Views\Presenters13\Delete.cshtml" />
+    <Content Include="Views\Presenters13\Details.cshtml" />
+    <Content Include="Views\Presenters13\Edit.cshtml" />
+    <Content Include="Views\Presenters13\Index.cshtml" />
+    <Content Include="Views\Presenters14\Create.cshtml" />
+    <Content Include="Views\Presenters14\Delete.cshtml" />
+    <Content Include="Views\Presenters14\Details.cshtml" />
+    <Content Include="Views\Presenters14\Edit.cshtml" />
+    <Content Include="Views\Presenters14\Index.cshtml" />
+    <Content Include="Views\Presenters15\Create.cshtml" />
+    <Content Include="Views\Presenters15\Delete.cshtml" />
+    <Content Include="Views\Presenters15\Details.cshtml" />
+    <Content Include="Views\Presenters15\Edit.cshtml" />
+    <Content Include="Views\Presenters15\Index.cshtml" />
+    <Content Include="Views\Presenters16\Create.cshtml" />
+    <Content Include="Views\Presenters16\Delete.cshtml" />
+    <Content Include="Views\Presenters16\Details.cshtml" />
+    <Content Include="Views\Presenters16\Edit.cshtml" />
+    <Content Include="Views\Presenters16\Index.cshtml" />
+    <Content Include="Views\Presenters17\Create.cshtml" />
+    <Content Include="Views\Presenters17\Delete.cshtml" />
+    <Content Include="Views\Presenters17\Details.cshtml" />
+    <Content Include="Views\Presenters17\Edit.cshtml" />
+    <Content Include="Views\Presenters17\Index.cshtml" />
+    <Content Include="Views\Presenters18\Create.cshtml" />
+    <Content Include="Views\Presenters18\Delete.cshtml" />
+    <Content Include="Views\Presenters18\Details.cshtml" />
+    <Content Include="Views\Presenters18\Edit.cshtml" />
+    <Content Include="Views\Presenters18\Index.cshtml" />
+    <Content Include="Views\Presenters19\Create.cshtml" />
+    <Content Include="Views\Presenters19\Delete.cshtml" />
+    <Content Include="Views\Presenters19\Details.cshtml" />
+    <Content Include="Views\Presenters19\Edit.cshtml" />
+    <Content Include="Views\Presenters19\Index.cshtml" />
+    <Content Include="Views\Presenters20\Create.cshtml" />
+    <Content Include="Views\Presenters20\Delete.cshtml" />
+    <Content Include="Views\Presenters20\Details.cshtml" />
+    <Content Include="Views\Presenters20\Edit.cshtml" />
+    <Content Include="Views\Presenters20\Index.cshtml" />
+    <Content Include="Views\Presenters1\Create.cshtml" />
+    <Content Include="Views\Presenters1\Delete.cshtml" />
+    <Content Include="Views\Presenters1\Details.cshtml" />
+    <Content Include="Views\Presenters1\Edit.cshtml" />
+    <Content Include="Views\Presenters1\Index.cshtml" />
+    <Content Include="Views\Presenters21\Create.cshtml" />
+    <Content Include="Views\Presenters21\Delete.cshtml" />
+    <Content Include="Views\Presenters21\Details.cshtml" />
+    <Content Include="Views\Presenters21\Edit.cshtml" />
+    <Content Include="Views\Presenters21\Index.cshtml" />
+    <Content Include="Views\Presenters22\Create.cshtml" />
+    <Content Include="Views\Presenters22\Delete.cshtml" />
+    <Content Include="Views\Presenters22\Details.cshtml" />
+    <Content Include="Views\Presenters22\Edit.cshtml" />
+    <Content Include="Views\Presenters22\Index.cshtml" />
+    <Content Include="Views\Presenters23\Create.cshtml" />
+    <Content Include="Views\Presenters23\Delete.cshtml" />
+    <Content Include="Views\Presenters23\Details.cshtml" />
+    <Content Include="Views\Presenters23\Edit.cshtml" />
+    <Content Include="Views\Presenters23\Index.cshtml" />
+    <Content Include="Views\Presenters24\Create.cshtml" />
+    <Content Include="Views\Presenters24\Delete.cshtml" />
+    <Content Include="Views\Presenters24\Details.cshtml" />
+    <Content Include="Views\Presenters24\Edit.cshtml" />
+    <Content Include="Views\Presenters24\Index.cshtml" />
+    <Content Include="Views\Presenters25\Create.cshtml" />
+    <Content Include="Views\Presenters25\Delete.cshtml" />
+    <Content Include="Views\Presenters25\Details.cshtml" />
+    <Content Include="Views\Presenters25\Edit.cshtml" />
+    <Content Include="Views\Presenters25\Index.cshtml" />
+    <Content Include="Views\Presenters26\Create.cshtml" />
+    <Content Include="Views\Presenters26\Delete.cshtml" />
+    <Content Include="Views\Presenters26\Details.cshtml" />
+    <Content Include="Views\Presenters26\Edit.cshtml" />
+    <Content Include="Views\Presenters26\Index.cshtml" />
+    <Content Include="Views\Presenters27\Create.cshtml" />
+    <Content Include="Views\Presenters27\Delete.cshtml" />
+    <Content Include="Views\Presenters27\Details.cshtml" />
+    <Content Include="Views\Presenters27\Edit.cshtml" />
+    <Content Include="Views\Presenters27\Index.cshtml" />
+    <Content Include="Views\Presenters28\Create.cshtml" />
+    <Content Include="Views\Presenters28\Delete.cshtml" />
+    <Content Include="Views\Presenters28\Details.cshtml" />
+    <Content Include="Views\Presenters28\Edit.cshtml" />
+    <Content Include="Views\Presenters28\Index.cshtml" />
+    <Content Include="Views\Presenters29\Create.cshtml" />
+    <Content Include="Views\Presenters29\Delete.cshtml" />
+    <Content Include="Views\Presenters29\Details.cshtml" />
+    <Content Include="Views\Presenters29\Edit.cshtml" />
+    <Content Include="Views\Presenters29\Index.cshtml" />
+    <Content Include="Views\Presenters30\Create.cshtml" />
+    <Content Include="Views\Presenters30\Delete.cshtml" />
+    <Content Include="Views\Presenters30\Details.cshtml" />
+    <Content Include="Views\Presenters30\Edit.cshtml" />
+    <Content Include="Views\Presenters30\Index.cshtml" />
+    <Content Include="Views\Presenters31\Create.cshtml" />
+    <Content Include="Views\Presenters31\Delete.cshtml" />
+    <Content Include="Views\Presenters31\Details.cshtml" />
+    <Content Include="Views\Presenters31\Edit.cshtml" />
+    <Content Include="Views\Presenters31\Index.cshtml" />
+    <Content Include="Views\Presenters32\Create.cshtml" />
+    <Content Include="Views\Presenters32\Delete.cshtml" />
+    <Content Include="Views\Presenters32\Details.cshtml" />
+    <Content Include="Views\Presenters32\Edit.cshtml" />
+    <Content Include="Views\Presenters32\Index.cshtml" />
+    <Content Include="Views\Presenters33\Create.cshtml" />
+    <Content Include="Views\Presenters33\Delete.cshtml" />
+    <Content Include="Views\Presenters33\Details.cshtml" />
+    <Content Include="Views\Presenters33\Edit.cshtml" />
+    <Content Include="Views\Presenters33\Index.cshtml" />
+    <Content Include="Views\Presenters34\Create.cshtml" />
+    <Content Include="Views\Presenters34\Delete.cshtml" />
+    <Content Include="Views\Presenters34\Details.cshtml" />
+    <Content Include="Views\Presenters34\Edit.cshtml" />
+    <Content Include="Views\Presenters34\Index.cshtml" />
+    <Content Include="Views\Presenters35\Create.cshtml" />
+    <Content Include="Views\Presenters35\Delete.cshtml" />
+    <Content Include="Views\Presenters35\Details.cshtml" />
+    <Content Include="Views\Presenters35\Edit.cshtml" />
+    <Content Include="Views\Presenters35\Index.cshtml" />
+    <Content Include="Views\Presenters36\Create.cshtml" />
+    <Content Include="Views\Presenters36\Delete.cshtml" />
+    <Content Include="Views\Presenters36\Details.cshtml" />
+    <Content Include="Views\Presenters36\Edit.cshtml" />
+    <Content Include="Views\Presenters36\Index.cshtml" />
+    <Content Include="Views\Presenters37\Create.cshtml" />
+    <Content Include="Views\Presenters37\Delete.cshtml" />
+    <Content Include="Views\Presenters37\Details.cshtml" />
+    <Content Include="Views\Presenters37\Edit.cshtml" />
+    <Content Include="Views\Presenters37\Index.cshtml" />
+    <Content Include="Views\Presenters38\Create.cshtml" />
+    <Content Include="Views\Presenters38\Delete.cshtml" />
+    <Content Include="Views\Presenters38\Details.cshtml" />
+    <Content Include="Views\Presenters38\Edit.cshtml" />
+    <Content Include="Views\Presenters38\Index.cshtml" />
+    <Content Include="Views\Presenters39\Create.cshtml" />
+    <Content Include="Views\Presenters39\Delete.cshtml" />
+    <Content Include="Views\Presenters39\Details.cshtml" />
+    <Content Include="Views\Presenters39\Edit.cshtml" />
+    <Content Include="Views\Presenters39\Index.cshtml" />
+    <Content Include="Views\Presenters40\Create.cshtml" />
+    <Content Include="Views\Presenters40\Delete.cshtml" />
+    <Content Include="Views\Presenters40\Details.cshtml" />
+    <Content Include="Views\Presenters40\Edit.cshtml" />
+    <Content Include="Views\Presenters40\Index.cshtml" />
+    <Content Include="Views\Presenters1\List.cshtml" />
+    <Content Include="Views\Presenters10\List.cshtml" />
+    <Content Include="Views\Presenters11\List.cshtml" />
+    <Content Include="Views\Presenters12\List.cshtml" />
+    <Content Include="Views\Presenters13\List.cshtml" />
+    <Content Include="Views\Presenters14\List.cshtml" />
+    <Content Include="Views\Presenters15\List.cshtml" />
+    <Content Include="Views\Presenters16\List.cshtml" />
+    <Content Include="Views\Presenters17\List.cshtml" />
+    <Content Include="Views\Presenters18\List.cshtml" />
+    <Content Include="Views\Presenters19\List.cshtml" />
+    <Content Include="Views\Presenters20\List.cshtml" />
+    <Content Include="Views\Presenters21\List.cshtml" />
+    <Content Include="Views\Presenters22\List.cshtml" />
+    <Content Include="Views\Presenters23\List.cshtml" />
+    <Content Include="Views\Presenters24\List.cshtml" />
+    <Content Include="Views\Presenters25\List.cshtml" />
+    <Content Include="Views\Presenters26\List.cshtml" />
+    <Content Include="Views\Presenters27\List.cshtml" />
+    <Content Include="Views\Presenters28\List.cshtml" />
+    <Content Include="Views\Presenters29\List.cshtml" />
+    <Content Include="Views\Presenters30\List.cshtml" />
+    <Content Include="Views\Presenters31\List.cshtml" />
+    <Content Include="Views\Presenters32\List.cshtml" />
+    <Content Include="Views\Presenters33\List.cshtml" />
+    <Content Include="Views\Presenters34\List.cshtml" />
+    <Content Include="Views\Presenters35\List.cshtml" />
+    <Content Include="Views\Presenters36\List.cshtml" />
+    <Content Include="Views\Presenters37\List.cshtml" />
+    <Content Include="Views\Presenters38\List.cshtml" />
+    <Content Include="Views\Presenters39\List.cshtml" />
+    <Content Include="Views\Presenters40\List.cshtml" />
+    <Content Include="Views\Presenters8\List.cshtml" />
+    <Content Include="Views\Presenters9\List.cshtml" />
+    <Content Include="Views\Home\Subindex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -391,6 +669,30 @@
     <EmbeddedResource Include="Migrations\201806241533080_CreatePresenterTableUser2.resx">
       <DependentUpon>201806241533080_CreatePresenterTableUser2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808232031523_sevenSessions.resx">
+      <DependentUpon>201808232031523_sevenSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808232032524_sevenSessions1.resx">
+      <DependentUpon>201808232032524_sevenSessions1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271827038_paperscore.resx">
+      <DependentUpon>201808271827038_paperscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271917280_paperscore2.resx">
+      <DependentUpon>201808271917280_paperscore2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271936289_papscore.resx">
+      <DependentUpon>201808271936289_papscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271949595_papscore2.resx">
+      <DependentUpon>201808271949595_papscore2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271951105_papscore21.resx">
+      <DependentUpon>201808271951105_papscore21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271952027_papscore2a.resx">
+      <DependentUpon>201808271952027_papscore2a.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -410,7 +712,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54361</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44375/</IISUrl>
+          <IISUrl>http://localhost:44375/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

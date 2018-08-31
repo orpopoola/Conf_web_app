@@ -1,0 +1,61 @@
+﻿@model IEnumerable<PresenterData.Models.Presenter>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Presenters List</h2>
+
+<p>
+    To view performance or edit a marked presentation @Html.ActionLink("Click here", "Index")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperTitle)
+        </th>
+        <th>
+            Status
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    if (item.SessionId == 10.ToString())
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentName)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.PaperId)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.PaperTitle)
+        </td>
+        
+        <td>
+            @if(item.NMarked == true)
+            {
+                <span> Marked </span>
+            }
+            else
+            {
+                @Html.ActionLink("Start Marking", "Create", new { id = item.Id })
+            }
+            
+        </td>
+    </tr>
+    }
+}
+
+</table>

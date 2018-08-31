@@ -1,0 +1,145 @@
+﻿@model PresenterData.Models.Presenter
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Presenter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedClarity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedClarity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedEyecon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedEyecon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedInteng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedInteng)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedTimekee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedTimekee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedOrigqua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedOrigqua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedCorlev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedCorlev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedWellstru)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedWellstru)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedGooduse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedGooduse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedQuestwell)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedQuestwell)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedClearansw)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectedClearansw)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Totmar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Totmar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nominate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nominate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

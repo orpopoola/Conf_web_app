@@ -92,8 +92,10 @@ namespace PresenterData.Models
         [Display(Name = "Total mark")]
         public string Totmar { get; set; }
 
-        [Display(Name = "BPA")]
-        public bool Nominate { get; set; }
+        
+        [Display(Name = "Paper Score (%)")]
+        [Range(1, 100)]
+        public int Nominate { get; set; }
 
         [Display(Name = "Marked")]
         public bool NMarked { get; set; }
